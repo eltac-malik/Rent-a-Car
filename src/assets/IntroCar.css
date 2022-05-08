@@ -1,0 +1,28 @@
+.all-filter
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.intro-filter
+{
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: black;
+    color: rgb(235, 233, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 0 3px;
+    text-transform: uppercase;
+}
+
+.intro-filter:hover
+{
+    cursor: pointer;
+}

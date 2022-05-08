@@ -1,0 +1,113 @@
+[
+    {
+            "id": 1,
+            "title": "Chevreloet Aveo",
+            "image": "https://www.carrentbaku.az/wp-content/uploads/2018/12/Chevrolet-Aveo-2015-370x230.jpg",
+            "day": 50,
+            "week": 330,
+            "category":"economic"
+      
+    },
+    {
+            "id": 2,
+            "title": "Nissan Sunny",
+            "image": "https://www.carrentbaku.az/wp-content/uploads/2018/12/Nissan-Sunny-2015-370x230.jpg",
+            "day": 50,
+            "week": 330,
+            "category":"economic"
+      
+    },
+    {
+            "id": 3,
+            "title": "Hyundai Accent",
+            "image": "https://www.carrentbaku.az/wp-content/uploads/2018/12/Hyundai-Accent2015-370x230.jpg",
+            "day": 50,
+            "week": 330,
+            "category":"economic"
+      
+    },
+    {
+            "id": 4,
+            "title": "Kia Rio",
+            "image": "https://www.carrentbaku.az/wp-content/uploads/2018/12/Kia-Rio-2015-370x230.jpg",
+            "day": 50,
+            "week": 330,
+            "category":"economic"
+      
+    },
+    {
+            "id": 5,
+            "title": "Kia Cerato",
+            "image": "https://www.carrentbaku.az/wp-content/uploads/bfi_thumb/Kia-Cerato-2015-o17ip9mm0exsdvkvxgtv3uqvtvgy5wtwpa7bnznblo.jpg",
+            "day": 50,
+            "week": 330,
+            "category":"economic"
+      
+    },
+    {
+            "id": 6,
+            "title": "Hyundai Elantra",
+            "image": "https://www.carrentbaku.az/wp-content/uploads/bfi_thumb/Hyundai-Elantra2015-o17hc1su5pkagx2kboy41rv02k224gfvloh21emfek.jpg",
+            "day": 55,
+            "week": 380,
+            "category":"economic"
+      
+    },
+    {
+            "id": 7,
+            "title": "Hyundai ix 35",
+            "image": "https://www.carrentbaku.az/wp-content/uploads/2018/12/Hyundai-ix35-2014-370x230.jpg",
+            "day": 65,
+            "week": 450,
+            "category":"suv"
+      
+    },
+    {
+            "id": 8,
+            "title": "Kia Sportage",
+            "image": "https://www.carrentbaku.az/wp-content/uploads/2018/12/kia-sportage-2015-370x230.jpg",
+            "day": 65,
+            "week": 450,
+            "category":"suv"
+      
+    },
+    {
+            "id": 9,
+            "title": "Mitsubishi L200",
+            "image": "https://www.carrentbaku.az/wp-content/uploads/2018/12/Mitsubishi-L200-2014-370x230.jpg",
+            "day": 80,
+            "week": 500,
+            "category":"suv"
+      
+    },
+    {
+            "id": 10,
+            "title": "Hyundai Sonata",
+            "image": "https://www.carrentbaku.az/wp-content/uploads/2018/12/Hyundai-Sonata-2014-370x230.jpg",
+            "day": 70,
+            "week": 480,
+            "category":"business"
+      
+    }
+    ,
+    {
+            "id": 11,
+            "title": "Hyundai Azera",
+            "image": "https://www.carrentbaku.az/wp-content/uploads/2018/12/Hyundai-Azera2014-370x230.jpg",
+            "day": 85,
+            "week": 550,
+            "category":"business"
+      
+    }
+    ,
+    {
+            "id": 12,
+            "title": "Mitsubishi Pajero",
+            "image": "https://www.carrentbaku.az/wp-content/uploads/2018/12/Mitsubishi-Pajero-370x230.jpg",
+            "day": 85,
+            "week": 550,
+            "category":"business"
+      
+    }
+
+]

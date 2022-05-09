@@ -6,12 +6,7 @@ import {Link,useNavigate } from "react-router-dom";
 function Car(props)
 {
     const {data} = props;
-    const navigate = useNavigate()
 
-    const handleNavigate = ()=>
-    {
-        navigate("/rent")
-    }
 
     return (
         <div className='cars'>
@@ -28,7 +23,7 @@ function Car(props)
                                   <h4>{e.title}</h4>
                                   <p>{e.day}.00 AZN/per day </p>
                                   <p>{e.week}.00 AZN/per week </p>
-                                  <button onClick={handleNavigate}>RENT IT</button>
+                                  <button><Link className='link' to={`/rent/${e.id}`}>RENT IT</Link></button>
                               </div>
                           )
                         })

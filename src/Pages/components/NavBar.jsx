@@ -1,10 +1,32 @@
-import React from 'react'
+import React,{useState} from 'react'
 import '../../assets/Navbar.css'
 import {Link } from "react-router-dom";
 
 function NavBar() {
+
+    const [side,setSide] = useState("hidden")
+
+    const handleSideOpen = ()=>
+    {
+        setSide("visible")
+    }
+    const handleSideClose = ()=>
+    {
+        setSide("hidden")
+    }
+
     return (
         <div className='navbar'>
+            <div className={`side-bar ${side}`}>
+            <div className="xmark">
+            <i onClick={handleSideClose} className="fa-solid fa-2x fa-xmark"></i>
+            </div>
+                <p className='for-p'><Link className='link for-p' to='/home'>Home</Link></p>
+                <p className='for-p'><Link className='link for-p' to='/home'>Cars</Link></p>
+                <p className='for-p'><Link className='link for-p' to='/home'>Online Booking</Link></p>
+                <p className='for-p'><Link className='link for-p' to='/home'>About</Link></p>
+                <p className='for-p'><Link className='link for-p' to='/home'>Contact Us</Link></p>
+            </div>
             <div className="img">
             <img src="https://carrentbaku.az/wp-content/uploads/2018/11/rent-logo-01.png" alt=""/>
             </div>
@@ -21,6 +43,7 @@ function NavBar() {
                 <li><i className="fa-brands fa-facebook-f"></i></li>
                 <li><i className="fa-brands fa-instagram"></i></li>
             </ul>
+            <i onClick={handleSideOpen} className="fa-solid fa-2x fa-bars"></i>
         </div>
     )
 }

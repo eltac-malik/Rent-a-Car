@@ -11,7 +11,8 @@ export const carSlice = createSlice({
     name:"car",
     initialState:{
         cars:[],
-        filteredcars:[]
+        filteredcars:[],
+        aboutOneCar:{}
     },
     reducers:{
         filtered:(state,action)=>
@@ -22,6 +23,10 @@ export const carSlice = createSlice({
                 })
         
                 state.filteredcars = newfilter
+        },
+        aboutCar:(state,action)=>
+        {
+            
         }
     },
     extraReducers:{

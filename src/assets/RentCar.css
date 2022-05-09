@@ -1,8 +1,56 @@
-
-
 .rent
 {
-  width: 100%;
-  height: 600px;
-  background-color: red;
+    width: 100%;
+    padding: 0 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.form
+{
+    width: 50%;
+    height: 500px;
+    background-color: red;
+}
+.about
+{
+    width: 40%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid silver;
+
+}
+
+.img-content
+{
+    width: 400px;
+    height: 500px;
+}
+
+.img-content img
+{
+    width: 100%;
+}
+
+h2
+{
+    margin: 20px;
+}
+
+@media(max-width:1000px)
+{
+    .rent
+    {
+        display: block;
+    }
+    .form{
+        width: 100%;
+    }
+    .about{
+        width: 100%;
+    }
 }

@@ -6,14 +6,11 @@ import {useDispatch} from 'react-redux'
 
 function IntroCar() {
 
-    const [target,setTarget] = useState("")
     const dispatch = useDispatch()
 
     const findval = (e)=>
     {
-        setTarget(e.target.textContent)
-       target !==""&&dispatch(filtered(target))
-        e.preventDefault();
+       dispatch(filtered(e.target.textContent))
     }
 
     return (

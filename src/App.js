@@ -12,7 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Navigate replace to="/home"/>}/>
           <Route path="/home" element={<Home/>}/>
-          <Route path="/rent" element={<RentCar/>}/>
+          <Route path="/rent/:id" element={<RentCar/>}/>
         </Routes>
       </Router>
     </div>

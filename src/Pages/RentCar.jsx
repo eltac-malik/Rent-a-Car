@@ -1,23 +1,28 @@
 import React, { useEffect, useState } from "react";
 import "../assets/RentCar.css";
-import { useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
-import Loader from "./components/Loader";
+import { useSelector,useDispatch } from "react-redux";
+import {profilData} from '../redux/carSlice'
+import { useParams} from "react-router-dom";
 import { Formik, Form, Field } from "formik";
 import schema from '../Pages/Validation/Yup'
 
+
 function RentCar() {
   const data = useSelector((state) => state.car.cars);
+  const profile = useSelector((state)=> state.car.profile)
   const param = useParams();
   const [about, setAbout] = useState({});
-  const [danger,setDanger] = useState("")
 
+  const dispatch = useDispatch();
+  
   useEffect(() => {
     setAbout(
       data.length !== 0 && data.find((e) => e.id === parseInt(param.id))
     );
   }, [data]);
 
+  console.log(profile);
+  
 
   return (
     <div className="rent">
@@ -25,12 +30,13 @@ function RentCar() {
       <Formik
       initialValues={{
         name: '',
+        surname:"",
         email: '',
         phone:""
       }}
       validationSchema={schema}
       onSubmit={values => {
-        console.log(values);
+        dispatch(profilData(values))
       }}>
 
         {
@@ -39,20 +45,34 @@ function RentCar() {
 
           <Form className='form-formik'>
           <div className='inp-div'>
-        <label>Name and Surname <span></span></label>
+        <label>Name <span></span></label>
         <Field className={`inp`} name="name" />
-        {errors.name && touched.name ? "sad" : ""}
+        {errors.name && touched.name ? (<i className="fa-solid fa-circle-info"></i>) : ""}
+          </div>
+          <div className='inp-div'>
+        <label>Surname <span></span></label>
+        <Field className={`inp`} name="surname" />
+        {errors.surname && touched.surname ? (<i className="fa-solid fa-circle-info"></i>) : ""}
           </div>
           <div className='inp-div'>
         <label>E-mail <span></span></label>
         <Field className='inp' name="email" />
-        {errors.email && touched.email ? setDanger("danger") : setDanger("")}
+        {errors.email && touched.email ?  (<i className="fa-solid fa-circle-info"></i>) : ""}
         </div>
         <div className='inp-div'>
         <label>Phone <span></span></label>
         <Field className='inp' name="phone" />
-        {errors.phone && touched.phone ?  setDanger("danger") : setDanger("")}
+        {errors.phone && touched.phone ?   (<i className="fa-solid fa-circle-info"></i>) : ""}
         </div>
+            
+        <div className='inp-div'>
+        <label>Phone <span></span></label>
+        <Field className='inp' type='date' name="phone" />
+        
+        </div>
+            
+
+
         <button className='button' type="submit">Okay</button>
       </Form>
   

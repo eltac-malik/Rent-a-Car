@@ -1,0 +1,63 @@
+.all-cars
+{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.car-one
+{
+    margin: 5px 0;
+    width: 70%;
+    height: 300px;
+    border: 1px solid silver;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+    
+}
+
+.car-img
+{
+    width: 300px;
+    height: 250px;
+}
+
+.car-img img
+{
+    width: 100%;
+}
+
+.car-one:first-child
+{
+    margin-top: 70px
+}
+
+.car-btn
+{
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    border:1px solid silver;
+    color: white;
+    transition: 0.3s;
+}
+
+.link-dec
+{
+    text-decoration: none;
+    color: white
+}
+
+.link-dec:hover
+{
+    color: black;
+}
+.car-btn:hover
+{
+    background-color: white;
+    transition: 0.3s;
+    color: black
+}

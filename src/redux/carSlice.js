@@ -11,7 +11,8 @@ export const carSlice = createSlice({
     name:"car",
     initialState:{
         cars:[],
-        filteredcars:[]
+        filteredcars:[],
+        profile:{}
     },
     reducers:{
         filtered:(state,action)=>
@@ -22,6 +23,10 @@ export const carSlice = createSlice({
                 })
         
                 state.filteredcars = newfilter
+        },
+        profilData:(state,action)=>
+        {
+            state.profile = action.payload
         }
     },
     extraReducers:{
@@ -36,5 +41,5 @@ export const carSlice = createSlice({
     }
 })
 
-export const {filtered} = carSlice.actions
+export const {filtered,profilData} = carSlice.actions
 export default carSlice.reducer

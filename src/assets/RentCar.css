@@ -11,8 +11,43 @@
 {
     width: 50%;
     height: 500px;
-    background-color: red;
+    border: 1px solid silver;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
+.inp-div
+{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.inp-div label
+{
+    width: 39%;
+    font-size: 20px;
+    font-weight: 500;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+label span
+{
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    width: 95%;
+    height: 1px;
+    background-color: silver;
+}
+
+
 .about
 {
     width: 40%;
@@ -39,6 +74,40 @@
 h2
 {
     margin: 20px;
+}
+
+.form-formik
+{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button
+{
+    width: 30%;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+.inp
+{
+    width: 60%;
+    height: 100%;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.danger
+{
+    border: 1px solid red;
 }
 
 @media(max-width:1000px)
